@@ -1,0 +1,12 @@
+source-material/
+__pycache__/
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.zip
+
+# Pulumi stack files are safe to commit if all secrets use `pulumi config set --secret`
+# (they'll appear as `secure: <encrypted>` in the yaml, not plaintext)
+.pulumi/

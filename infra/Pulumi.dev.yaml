@@ -1,0 +1,16 @@
+config:
+  ai-running-coach:openaiApiKey:
+    secure: AAABAKrQ7V6Habsb8q4IaXmmgqNwdSDW7kzsd8eGk6SnZe2jdNInJI+/ieoKXtK3KDQ8KxyB9xPZ9ishW8ici+u0D0KeW/+wKgaOi5Ed6SIZ8jECnwmJltmD9uyt6y/x+e2k3Q5Q0vZneMsD7nzZ4r4gnJYy/IvIqAaffuzkGb34WTZmCJ4l2A5BsH1bWPH09UXjK/gi3whoozvIW52XyX8lBh3H/gxSEhTWp+3xPBpYrj/XpoxpGoWjEY8okXvh94vMhA==
+  ai-running-coach:slackBotToken:
+    secure: AAABAEuthasQWbbMAmV31/TL/k4TCq9fn4E3HW68okSlWREsy5p3bl40EB+7HYZvuZCechQ+oLJLgoabAGvfFiA0j6VAyVNizr4ndWDuFd/om0egLUvU1Q==
+  ai-running-coach:slackChannelId:
+    secure: AAABAKL8rzoMTzL0tb7zLJD+HOcNRs3g1rQDoYRG3vsJuuiOwizGnZ594w==
+  ai-running-coach:stravaClientId:
+    secure: AAABAEFBP5cFyamXbf8HL+ZYfBISOpMcRkPrtPgTcqQvTaSMdQo=
+  ai-running-coach:stravaClientSecret:
+    secure: AAABAF+gPbxDb+0kMml5QiEiSVyQHe1KDOJDEVu5XXtfNsPfSo8E0GBsCR6ecXbgSEbD6OYCmRWnDR2dH5H179Yjz9RwJnBm
+  ai-running-coach:stravaRefreshToken:
+    secure: AAABAFOrx1+d8wXihMU2yMkiOmX05KYzTKylGjIc42Ojt95lnVZdhnATbpQmwu4cty9fiUaYGz5j2rqtRoS7Etzi7Cwo920G
+  ai-running-coach:athleteId: "17907995"
+  aws:region: us-east-1
+  aws:profile: adam-personal

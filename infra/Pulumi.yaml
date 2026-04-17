@@ -1,0 +1,3 @@
+name: ai-running-coach
+runtime: python
+description: AI running coach — Lambda + EventBridge + DynamoDB + S3
