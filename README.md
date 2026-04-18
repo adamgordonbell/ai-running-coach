@@ -2,7 +2,18 @@
 
 Example code from the talk *I Built an AI Running Coach* (PyTexas 2026).
 
-Not a chatbot — a system that consumes data you're already producing.
+**This is a simplified version of my real Momentum running coach** 
+
+
+## Simplifications vs. the real system
+
+- **Memory:** production uses chat → DynamoDB journals → weekly summarizer → S3. This demo collapses to one tool call for clarity.
+- **No fitness metrics:** real system computes CTL/ATL training load, availability %, and durability from Strava HR streams and injects them into every prompt. This demo omits that module.
+- **No zone calculation:** real system computes HR zones from Strava streams. This demo uses avg HR only.
+- **Strava webhook auth:** Strava provides no request signing — both systems rely on the GET handshake only
+
+## Overview
+
 Your data + LLM + feedback loop. Two triggers. One Lambda. ~$1/month.
 
 ```
@@ -50,10 +61,4 @@ just invoke-cron     # test the morning check-in
 just invoke-webhook  # test post-run review
 just destroy         # tear down when done
 ```
-
-## Simplifications vs. the real system
-
-- **Memory:** production uses chat → DynamoDB journals → weekly summarizer → S3. This demo collapses to one tool call for clarity.
-- **No fitness metrics:** real system computes CTL/ATL training load, availability %, and durability from Strava HR streams and injects them into every prompt. This demo omits that module.
-- **No zone calculation:** real system computes HR zones from Strava streams. This demo uses avg HR only.
-- **Strava webhook auth:** Strava provides no request signing — both systems rely on the GET handshake only.
+.
